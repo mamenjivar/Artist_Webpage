@@ -1,0 +1,201 @@
+<html>
+    <head>
+        <title>News</title>
+        <!--background image information-->
+    <style>
+        body
+        {
+            background-image: url("pictures/abstractsmokebackground.jpg");
+            background-repeat: repeat;
+            background-position: top, bottom;
+            background-size: 100%;
+            background-attachment: fixed;
+        }
+        </style>    
+        
+              <!--information containing header position-->
+    <style>
+        html, body, #container1 { height: 50%}
+        body > #container1 {height: auto; min-height: 0%}
+        
+        #header
+        {
+            color: red;
+            clear: both;
+            top: 20px;
+            left: 105px;
+            position: fixed;
+            font-size: 40px;
+            height: 1em;
+            margin-top: 0em;
+        }
+        
+        #content1 {padding-top: 0em}
+    </style>
+        
+<!--information containing footer position-->
+    <style>
+        html, body, #container {height: 99.2%; }
+        body > #container { height: auto, min-height: 0%}
+        
+        #footer
+        {
+            color: red;
+            clear: both;
+            left: 25px;
+            position: fixed;
+            height: 3em;
+            margin-top: 0em;
+            bottom: 5px;
+        }
+        
+        #content { padding-bottom: 0em}
+    </style>
+        
+<!--navigation bar information, color, location-->
+    <style type="text/css">
+
+        ul {
+            font-family: Arial, Verdana;
+            position: fixed;
+            right: 25px;
+            top: -71px;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul li {
+            display: block;
+            position: relative;
+            float: left;
+        }
+        li ul { display: none; }
+        ul li a {
+            display: block;
+            text-decoration: none;
+            color: #ffffff;
+            border-top: 1px solid #ffffff;
+            padding: 5px 15px 5px 15px;
+            background: #2C5463;
+            margin-left: 1px;
+            white-space: nowrap;
+        }
+
+        ul li a:hover { background: #617F8A; }
+        li:hover ul { 
+            display: block; 
+            position: absolute;
+        }
+        li:hover li { 
+            float: none;
+            font-size: 11px;
+        }
+        li:hover a { background: #617F8A; }
+        li:hover li a:hover { background: #95A9B1; }
+
+        #menu
+        {
+        	float: right;
+        	margin-top: 119px;
+        }
+
+    </style>
+    <!--table style position layout-->
+    <style>
+    .table{
+        position: fixed;
+        left: 40%;
+        top: 80px;
+        border: none;
+        border-collapse: collapse;
+    }
+    .table tr:nth-child(odd){
+        background-color: gray;
+    }
+    .table tr:nth-child(even){
+        background-color: teal;
+    }
+    /*picture position within table*/
+    .image_box1{
+        float: left;
+        margin: 5px;
+        height: 185px;
+        width: 185px;
+        
+    }
+    </style>
+        <!--the jquery section which pulls up the blowup part of the images in news section-->
+    <script src="jquery/lightbox/js/jquery-1.11.0.min.js"></script>
+        <script src="jquery/lightbox/js/lightbox.min.js"></script>
+        
+    <link href="jquery/lightbox/css/lightbox.css" rel="stylesheet" />
+        
+    </head>
+    <body>
+        
+        <!--tables for news section-->
+        
+        <table style="width: 400px" class="table" align="center">
+        <tr>
+            <td><a href="jquery/lightbox/img/unnamed.jpg" data-lightbox="image-1" data-title="Tune into the album">
+                <img src="pictures/unnamed.jpg" class="image_box1"></a>Album officially released on May 20th, 2014!
+                <a href="pictures/quimicaesencialinformation.JPG" data-lightbox="image-1"</a></td>
+        </tr>
+        <tr>
+            <td><a href="jquery/lightbox/img/songcover.JPG" data-lightbox="image-2" data-title="check this album out!">
+                <img src="pictures/songcover.JPG" class="image_box1"></a>Enamorado now released!
+                <a href="pictures/songcoverinformation.JPG" data-lightbox="image-2"></a></td>
+        </tr>
+        <tr>
+            <td><a href="pictures/image_23.jpeg" data-lightbox="image-3">
+                <img src="pictures/image_23.jpeg" class="image_box1"></a>Songcover for Quimica Esencial</td>
+        </tr>
+        </table>
+        
+        <!--social network icons, web developer information, header, footer-->   
+        <img style="position: fixed; top: 0px; height:75px; right: 0px; width: 100%;" src="pictures/bannerheader.jpg">
+        <a href="nomarwebsite.html"><img style="position: fixed; top: 10px; left: 30px; height: 60px; width: 60px;"src="pictures/Nomarlogo.jpeg"></a>
+        
+        
+<!--header information-->
+        <div id="container1">
+            <div id="content1"></div>
+        </div>
+        <a href="nomarwebsite.html"><div id="header">Nomar</div></a>
+        <div id="toppic"></div>
+        
+<!--navigation bar-->
+        <ul id="menu">
+            <li><a href="nomarwebsite.html">HOME</a></li> 
+            <li><a href="">NEWS</a> 
+
+            </li> 
+            <li><a href="gallery.html">GALLERY</a> 
+
+            </li>
+            <li><a href="videos.html">VIDEOS</a> 
+
+             <li><a href="about.html">ABOUT</a></li>
+            </li> 
+        </ul> 
+    
+
+    </div>
+        
+
+<!--banner for footer and social media icon locations-->        
+        <img style="position: fixed; bottom: 0px; height: 75px; right: 0px; width: 100%" src="pictures/bannerheader1.jpg">
+        <a href="https://twitter.com/nomar_music"><img style="position: fixed; Bottom: 5px; Right: 100px; Width: 65px" src="pictures/twittericon.png"></a>
+        <a href="https://www.youtube.com/user/NomarMusicTV"><img style="position: fixed; Bottom: 5px; Right: 190px; Width: 65px" src="pictures/youtubeicon.png"></a>
+        <a href="http://instagram.com/nomarmusic"><img style="position: fixed; Bottom: 5px; Right: 275px; Width: 65px" src="pictures/instagramicon.png"></a>
+        <a href="https://www.facebook.com/nomar.dejesus.3"><img style="position: fixed; bottom: 5px; right: 15px; width: 65px" src="pictures/facebookicon.png"></a>
+
+<!--footer information-->
+        <div id="container">
+            <div id="content"></div>
+        </div>
+        <div id="footer">Design 2014 MENJIVARMIGUEL221@GMAIL.COM</div>
+        <div id="bottompic"></div>
+    </body>
+</html>

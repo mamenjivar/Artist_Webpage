@@ -1,0 +1,223 @@
+<html>
+    <head>
+        <title>Gallery</title>
+        
+
+            <!--background image information-->
+    <style>
+        body
+        {
+            background-image: url("pictures/abstractsmokebackground.jpg");
+            background-repeat: repeat;
+            background-position: top, bottom;
+            background-size: 100%;
+            background-attachment: fixed;
+        }
+        </style>
+              <!--information containing header position-->
+    <style>
+        html, body, #container1 { height: 50%}
+        body > #container1 {height: auto; min-height: 0%}
+        
+        #header
+        {
+            color: red;
+            clear: both;
+            top: 20px;
+            left: 105px;
+            position: fixed;
+            height: 1em;
+            font-size: 40px;
+            margin-top: 0em;
+        }
+        
+        #content1 {padding-top: 0em}
+    </style>
+        
+<!--information containing footer position-->
+    <style>
+        html, body, #container {height: 99.2%; }
+        body > #container { height: auto, min-height: 0%}
+        
+        #footer
+        {
+            color: red;
+            clear: both;
+            left: 25px;
+            position: fixed;
+            height: 3em;
+            margin-top: 0em;
+            bottom: 5px;
+        }
+        
+        #content { padding-bottom: 0em}
+    </style>
+        
+<!--navigation bar information, color, location-->
+    <style type="text/css">
+
+        ul {
+            font-family: Arial, Verdana;
+            position: fixed;
+            right: 25px;
+            top: -71px;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul li {
+            display: block;
+            position: relative;
+            float: left;
+        }
+        li ul { display: none; }
+        ul li a {
+            display: block;
+            text-decoration: none;
+            color: #ffffff;
+            border-top: 1px solid #ffffff;
+            padding: 5px 15px 5px 15px;
+            background: #2C5463;
+            margin-left: 1px;
+            white-space: nowrap;
+        }
+
+        ul li a:hover { background: #617F8A; }
+        li:hover ul { 
+            display: block; 
+            position: absolute;
+        }
+        li:hover li { 
+            float: none;
+            font-size: 11px;
+        }
+        li:hover a { background: #617F8A; }
+        li:hover li a:hover { background: #95A9B1; }
+
+        #menu
+        {
+        	float: right;
+        	margin-top: 119px;
+        }
+
+    </style>
+        
+    <style>
+        .table{
+            top: 100px;
+            position: absolute;
+            left: 5%;
+        }
+        .gallery1{
+            width: 200px;
+            height: 200px;
+            border: 2px solid#000000;
+        }
+        </style>
+    <!--jquery section what makes the images blow up on the screen/ the code that calls this action-->
+      <script src="jquery/lightbox/js/jquery-1.11.0.min.js"></script>
+        <script src="jquery/lightbox/js/lightbox.min.js"></script>
+        
+    <link href="jquery/lightbox/css/lightbox.css" rel="stylesheet" />
+        
+    </head>
+    <body>  
+        
+        <table style="width:300px" class="table" align="center">
+        <tr>
+             <td><a href="pictures/image_12.jpeg" data-lightbox="image-1">
+                <img src="pictures/image_12.jpeg" class="gallery1"></a></td>
+            <td><a href="pictures/image_11.jpeg" data-lightbox="image-1">
+                <img src="pictures/image_11.jpeg" class="gallery1"></a></td>
+            <td><a href="pictures/image_10.jpeg" data-lightbox="image-1">
+                <img src="pictures/image_10.jpeg" class="gallery1"></a></td>
+            <td><a href="pictures/image_1.jpeg" data-lightbox="image-1">
+                <img src="pictures/image_1.jpeg" class="gallery1"></a></td>
+            <td><a href="pictures/image_20.jpeg" data-lightbox="image-1">
+                <img src="pictures/image_20.jpeg" class="gallery1"</a></td>
+            <td><a href="pictures/image_3.jpeg" data-lightbox="image-1">
+                <img src="pictures/image_3.jpeg" class="gallery1"></a></td>
+            <td><a href="pictures/image_19.jpeg" data-lightbox="image-1">
+                <img src="pictures/image_19.jpeg" class="gallery1"</a></td>
+        </tr>
+        <tr>
+            <td><a href="pictures/image_4.jpeg" data-lightbox="image-1">
+                <img src="pictures/image_4.jpeg" class="gallery1"></a></td>
+            <td><a href="pictures/image_5.jpeg" data-lightbox="image-1">
+                <img src="pictures/image_5.jpeg" class="gallery1"></a></td>
+            <td><a href="pictures/image_6.jpeg" data-lightbox="image-1">
+                <img src="pictures/image_6.jpeg" class="gallery1"></a></td>
+             <td><a href="pictures/image_13.jpeg" data-lightbox="image-1">
+                <img src="pictures/image_13.jpeg" class="gallery1"></a></td>
+            <td><a href="pictures/image_14.jpeg" data-lightbox="image-1">
+                <img src="pictures/image_14.jpeg" class="gallery1"></a></td>
+            <td><a href="pictures/image_15.jpeg" data-lightbox="image-1">
+                <img src="pictures/image_15.jpeg" class="gallery1"></a></td>
+            <td><a href="pictures/image_21.jpeg" data-lightbox="image-1">
+                <img src="pictures/image_21.jpeg" class="gallery1"</a></td>
+        </tr>
+        <tr>
+            <td><a href="pictures/image_7.jpeg" data-lightbox="image-1">
+                <img src="pictures/image_7.jpeg" class="gallery1"></a></td>
+            <td><a href="pictures/image_8.jpeg" data-lightbox="image-1">
+                <img src="pictures/image_8.jpeg" class="gallery1"></a></td>
+            <td><a href="pictures/image_9.jpeg" data-lightbox="image-1">
+                <img src="pictures/image_9.jpeg" class="gallery1"></a></td>
+             <td><a href="pictures/image_16.jpeg" data-lightbox="image-1">
+                <img src="pictures/image_16.jpeg" class="gallery1"></a></td>
+            <td><a href="pictures/image_17.jpeg" data-lightbox="image-1">
+                <img src="pictures/image_17.jpeg" class="gallery1"></a></td>
+            <td><a href="pictures/image_18.jpeg" data-lightbox="image-1">
+                <img src="pictures/image_18.jpeg" class="gallery1"></a></td>
+            <td><a href="pictures/image_22.jpeg" data-lightbox="image-1">
+                <img src="pictures/image_22.jpeg" class="gallery1"></a></td>
+        </tr>
+        </table>
+        
+        <!--social network icons, web developer information, header, footer-->   
+        <img style="position: fixed; top: 0px; height:75px; right: 0px; width: 100%;" src="pictures/bannerheader.jpg">
+        <a href="nomarwebsite.html"><img style="position: fixed; top: 10px; left: 30px; height: 60px; width: 60px;"src="pictures/Nomarlogo.jpeg"></a>
+        
+        
+<!--header information-->
+        <div id="container1">
+            <div id="content1"></div>
+        </div>
+        <a href="nomarwebsite.html"><div id="header">Nomar</div></a>
+        <div id="toppic"></div>
+        
+<!--navigation bar-->
+        <ul id="menu">
+            <li><a href="nomarwebsite.html">HOME</a></li> 
+            <li><a href="news.html">NEWS</a> 
+
+            </li> 
+            <li><a href="">GALLERY</a> 
+
+            </li>
+            <li><a href="videos.html">VIDEOS</a> 
+
+             <li><a href="about.html">ABOUT</a></li>
+            </li> 
+        </ul> 
+    
+
+    </div>
+        
+
+<!--banner for footer and social media icon locations-->        
+        <img style="position: fixed; bottom: 0px; height: 75px; right: 0px; width: 100%" src="pictures/bannerheader1.jpg">
+        <a href="https://twitter.com/nomar_music"><img style="position: fixed; Bottom: 5px; Right: 100px; Width: 65px" src="pictures/twittericon.png"></a>
+        <a href="https://www.youtube.com/user/NomarMusicTV"><img style="position: fixed; Bottom: 5px; Right: 190px; Width: 65px" src="pictures/youtubeicon.png"></a>
+        <a href="http://instagram.com/nomarmusic"><img style="position: fixed; Bottom: 5px; Right: 275px; Width: 65px" src="pictures/instagramicon.png"></a>
+        <a href="https://www.facebook.com/nomar.dejesus.3"><img style="position: fixed; bottom: 5px; right: 15px; width: 65px" src="pictures/facebookicon.png"></a>
+
+<!--footer information-->
+        <div id="container">
+            <div id="content"></div>
+        </div>
+        <div id="footer">Design 2014 MENJIVARMIGUEL221@GMAIL.COM</div>
+        <div id="bottompic"></div>
+    </body>
+</html>

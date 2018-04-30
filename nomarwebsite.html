@@ -1,0 +1,203 @@
+<!doctype html>
+    <head>
+        <meta charset="utf-8">
+        <title>Nomar website</title>
+    <!--background image information-->
+    <style>
+        body
+        {
+            background-image: url("pictures/abstractsmokebackground.jpg");
+            background-repeat: repeat;
+            background-position: top, bottom;
+            background-size: 100%;
+            background-attachment: fixed;
+        }
+        </style>
+        
+        <!--information containing header position-->
+    <style>
+        html, body, #container1 { height: 50%}
+        body > #container1 {height: auto; min-height: 0%}
+        
+        #header
+        {
+            color: red;
+            clear: both;
+            top: 20px;
+            left: 105px;
+            position: fixed;
+            height: 1em;
+            font-size: 40px;
+            margin-top: 0em;
+        }
+        
+        #content1 {padding-top: 0em}
+    </style>
+        
+<!--information containing footer position-->
+    <style>
+        html, body, #container {height: 45%; }
+        body > #container { height: auto, min-height: 0%}
+        
+        #footer
+        {
+            color: red;
+            clear: both;
+            left: 25px;
+            position: fixed;
+            height: 3em;
+            margin-top: 0em;
+            bottom: 5px;
+        }
+        
+        #content { padding-bottom: 0em}
+    </style>
+        
+<!--navigation bar information, color, location-->
+    <style type="text/css">
+
+        ul {
+            font-family: Arial, Verdana;
+            position: fixed;
+            right: 25px;
+            top: -71px;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul li {
+            display: block;
+            position: relative;
+            float: left;
+        }
+        li ul { display: none; }
+        ul li a {
+            display: block;
+            text-decoration: none;
+            color: #ffffff;
+            border-top: 1px solid #ffffff;
+            padding: 5px 15px 5px 15px;
+            background: #2C5463;
+            margin-left: 1px;
+            white-space: nowrap;
+        }
+
+        ul li a:hover { background: #617F8A; }
+        li:hover ul { 
+            display: block; 
+            position: absolute;
+        }
+        li:hover li { 
+            float: none;
+            font-size: 11px;
+        }
+        li:hover a { background: #617F8A; }
+        li:hover li a:hover { background: #95A9B1; }
+
+        #menu
+        {
+        	float: right;
+        	margin-top: 119px;
+        }
+
+    </style>
+        <!--119px-->
+    <!--the css for the background picture slideshow-->
+        
+        <script type ="text/javascript">
+            <!-->
+                var image1=new Image()
+                image1.src="pictures/image_18.jpeg"
+                var image2=new Image()
+                image2.src="pictures/image_22.jpeg"
+                var image3=new Image()
+                image3.src="pictures/image_20.jpeg"
+                var image4=new Image()
+                image4.src="pictures/image_21.jpeg"
+                var image5=new Image()
+                image5.src="pictures/image_15.jpeg"
+                var image6=new Image()
+                image6.src="pictures/image_17.jpeg"
+            //-->
+                
+                </script>
+        
+        <style>
+        .slideshow{
+            margin-top: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: auto;
+        }
+        </style>   
+    </head>
+    <body>
+        
+        <!--html markup for picture slideshow-->
+        <img src="pictures/image_12.jpeg" class="slideshow" name="slide" width="750" height="750">
+        <script type="text/javascript">
+            <!--
+                var step=1
+                function slideit(){
+                    document.images.slide.src=eval("image"+step+".src")
+                    if(step<6)
+                    step++
+                    else
+                    step=1
+                    setTimeout("slideit()", 2500)
+                    }
+            slideit()
+            //-->
+            
+        </script>
+
+       
+     <!--social network icons, web developer information, header, footer-->   
+        <img style="position: fixed; top: 0px; height:75px; right: 0px; width: 100%;" src="pictures/bannerheader.jpg">
+        <img style="position: fixed; top: 10px; left: 30px; height: 60px; width: 60px;" src="pictures/Nomarlogo.jpeg">
+        
+        
+<!--header information-->
+        <div id="container1">
+            <div id="content1"></div>
+        </div>
+        <div id="header">Nomar</div>
+        <div id="toppic"></div>
+        
+<!--navigation bar-->
+        <ul id="menu">
+            <li><a href="">HOME</a></li> 
+            <li><a href="news.html">NEWS</a> 
+
+            </li> 
+            <li><a href="gallery.html">GALLERY</a> 
+
+            </li>
+            <li><a href="videos.html">VIDEOS</a> 
+
+             <li><a href="about.html">ABOUT</a></li>
+            </li> 
+        </ul> 
+    
+
+    </div>
+        
+
+<!--banner for footer and social media icon locations-->        
+        <img style="position: fixed; bottom: 0px; height: 75px; right: 0px; width: 100%" src="pictures/bannerheader1.jpg">
+        <a href="https://twitter.com/nomar_music"><img style="position: fixed; Bottom: 5px; Right: 100px; Width: 65px" src="pictures/twittericon.png"></a>
+        <a href="https://www.youtube.com/user/NomarMusicTV"><img style="position: fixed; Bottom: 5px; Right: 190px; Width: 65px" src="pictures/youtubeicon.png"></a>
+        <a href="http://instagram.com/nomarmusic"><img style="position: fixed; Bottom: 5px; Right: 275px; Width: 65px" src="pictures/instagramicon.png"></a>
+        <a href="https://www.facebook.com/nomar.dejesus.3"><img style="position: fixed; bottom: 5px; right: 15px; width: 65px" src="pictures/facebookicon.png"></a>
+
+<!--footer information-->
+        <div id="container">
+            <div id="content"></div>
+        </div>
+        <div id="footer">Design 2014 MENJIVARMIGUEL221@GMAIL.COM</div>
+        <div id="bottompic"></div>
+        
+    </body>
+</html>
